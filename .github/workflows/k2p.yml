@@ -41,7 +41,7 @@ jobs:
           wget https://github.com/shyex/v2ray-padavan-doh/blob/master/padavan/user/Makefile -O user/Makefile
           sed -i '$a\export SSL_CERT_FILE=/usr/lib/cacert.pem' user/scripts/profile
 
-          # Basic for me
+          ## Basic for me
           fakeroot ./build_firmware_ci NEWIFI3
           mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/NEWIFI3_myself.trx
 
